@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PC버전 */
+body {
+  max-width: 1600px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.main {
+  height: 500px;
+  .box1 {
+    background: green;
+    height: 200px;
+  }
+  .box2 {
+    background: yellow;
+    height: 200px;
+  }
+  .box3 {
+    height: 200px;
+    background: green;
+  }
+}
+/* ipad */
+@media screen and (max-width: 767px) {
+  .pcTitle {
+    display: none;
+  }
+  .ipadTitle {
+    display: block;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  .ipadTitle {
+    display: none;
+  }
+}

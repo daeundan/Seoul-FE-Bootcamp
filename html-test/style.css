@@ -1,0 +1,221 @@
+body {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+} 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.container {
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 헤더 */
+.header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    .logo {
+    margin-left: 40px;
+    cursor: pointer;
+    img {
+      width: 120px;  
+    }
+    }
+    ul {
+        display:flex;
+        gap: 60px;
+        text-decoration: none;
+        li {
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-bottom: 2px solid transparent;
+            &:hover {
+                color: #ff0;
+                border-bottom: 2px solid #ff0;
+            }
+        }
+    }
+    .login {
+    margin-left: 50px;
+    gap: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+    span {
+        margin-right: 20px;
+        &:hover {
+            color: #f00;
+            border-bottom: 2px solid #f00;
+        }
+        }
+    }
+    
+.ham {
+    width: 80px;
+    height: 80px;
+    background: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    span {
+        width: 30px;
+        height: 4px;
+        background: #000;
+        color: #000;
+    }
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+}
+
+/* 메인 */
+.main {
+    .title {
+        color: #fff;
+    }
+    .box-inner {
+        display: flex;
+        .box1 {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 630px;
+            background: #d1cdcd;
+            padding: 40px;
+            gap: 20px;
+            #title {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            input {
+                padding: 20px;
+                border: none;
+            }
+    
+            button {
+                background-color: #181818;
+                border: none;
+                border-radius: 2px;
+                color: #fff;
+                padding: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: #fff;
+                    border: none;
+                    color: #000;
+                }
+            }
+        }
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 630px;
+            background: #ff0;
+            padding: 40px;
+            gap: 20px;
+            transition: all 0.3s ease-in-out;
+            #title {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+            button {
+                background-color: #181818;
+                border: none;
+                border-radius: 2px;
+                color: #fff;
+                padding: 10px;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    background: #fff;
+                    border: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+/* 푸터 */
+.footer {
+    width: 100vw;
+    height: 80px;
+    background: #222;
+    color: #ddd;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    .footer-nav {
+        width: 100vw;
+        background-color: #222;
+        ul {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+            text-decoration: none;
+            li {
+                font-size: 16px;
+                cursor: pointer;
+                transition: all 0.3s;
+                border-bottom: 2px solid transparent;
+                &:hover {
+                    color: #ff0;
+                    border-bottom: 2px solid #ff0;
+                }
+            }
+        }
+    }
+    .footer-box {
+        display: flex;
+        width: 100vw;
+        background-color: #222;
+        .img {
+            img {
+                width: 200px;  
+            }
+        }
+        .contact {
+            .text {
+                display: flex;
+            }
+        }
+    }
+}

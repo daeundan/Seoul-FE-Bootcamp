@@ -1,0 +1,24 @@
+.wrap {
+  background: antiquewhite;
+  display: grid;
+  gap: 10px;
+  /* 칸의 개수 grid-template-columns: 칸1 칸2 칸2 */
+  /* 가로 5개 그 밑으로 나머지 */
+  /* grid-template-columns: 200px 200px 200px 200px 200px;
+   */
+  /* grid-template-columns: auto auto auto auto auto; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* grid-template-columns: 1fr 2fr 1fr; 너비값이 달라짐 */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* 줄의 높이는 grid-template-rows: 줄높이 줄높이 줄높이 */
+  grid-template-rows: 100px 200px 100px;
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    border: 1px solid black;
+    color: #fff;
+  }
+}
